@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,15 @@
 		639540A125AD388500CB39C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639540A025AD388500CB39C8 /* Assets.xcassets */; };
 		639540A425AD388500CB39C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639540A225AD388500CB39C8 /* LaunchScreen.storyboard */; };
 		639540A725AD388500CB39C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639540A625AD388500CB39C8 /* main.m */; };
+		639540C425ADA18900CB39C8 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639540C325ADA18900CB39C8 /* LocalAuthentication.framework */; };
+		639540C625ADA18F00CB39C8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639540C525ADA18F00CB39C8 /* SafariServices.framework */; };
+		639540C825ADA19700CB39C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639540C725ADA19700CB39C8 /* SystemConfiguration.framework */; };
+		639540CA25ADA1A400CB39C8 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639540C925ADA1A400CB39C8 /* AuthenticationServices.framework */; };
+		C4090D9725B31976FA3CB4F4 /* Pods_GoogleOAuthTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB157CB60260E42F58A4A26A /* Pods_GoogleOAuthTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0478954CD9AE47BA5EC7436F /* Pods-GoogleOAuthTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleOAuthTest.debug.xcconfig"; path = "Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6395409125AD388300CB39C8 /* GoogleOAuthTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleOAuthTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6395409425AD388300CB39C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6395409525AD388300CB39C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +35,12 @@
 		639540A325AD388500CB39C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639540A525AD388500CB39C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		639540A625AD388500CB39C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		639540C325ADA18900CB39C8 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		639540C525ADA18F00CB39C8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		639540C725ADA19700CB39C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		639540C925ADA1A400CB39C8 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		B606061E59B6F35B12AF50EA /* Pods-GoogleOAuthTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleOAuthTest.release.xcconfig"; path = "Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest.release.xcconfig"; sourceTree = "<group>"; };
+		DB157CB60260E42F58A4A26A /* Pods_GoogleOAuthTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleOAuthTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +48,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639540C425ADA18900CB39C8 /* LocalAuthentication.framework in Frameworks */,
+				639540CA25ADA1A400CB39C8 /* AuthenticationServices.framework in Frameworks */,
+				C4090D9725B31976FA3CB4F4 /* Pods_GoogleOAuthTest.framework in Frameworks */,
+				639540C825ADA19700CB39C8 /* SystemConfiguration.framework in Frameworks */,
+				639540C625ADA18F00CB39C8 /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4516D48D6CF48C7542E3EEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639540C925ADA1A400CB39C8 /* AuthenticationServices.framework */,
+				639540C725ADA19700CB39C8 /* SystemConfiguration.framework */,
+				639540C525ADA18F00CB39C8 /* SafariServices.framework */,
+				639540C325ADA18900CB39C8 /* LocalAuthentication.framework */,
+				DB157CB60260E42F58A4A26A /* Pods_GoogleOAuthTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C6AF2EB6EF846DF7EE467C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0478954CD9AE47BA5EC7436F /* Pods-GoogleOAuthTest.debug.xcconfig */,
+				B606061E59B6F35B12AF50EA /* Pods-GoogleOAuthTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6395408825AD388300CB39C8 = {
 			isa = PBXGroup;
 			children = (
 				6395409325AD388300CB39C8 /* GoogleOAuthTest */,
 				6395409225AD388300CB39C8 /* Products */,
+				4C6AF2EB6EF846DF7EE467C4 /* Pods */,
+				4516D48D6CF48C7542E3EEEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 639540AA25AD388500CB39C8 /* Build configuration list for PBXNativeTarget "GoogleOAuthTest" */;
 			buildPhases = (
+				B14ADBB9096DBA486F359120 /* [CP] Check Pods Manifest.lock */,
 				6395408D25AD388300CB39C8 /* Sources */,
 				6395408E25AD388300CB39C8 /* Frameworks */,
 				6395408F25AD388300CB39C8 /* Resources */,
+				1A8080A247DA662FFBF29011 /* [CP] Embed Pods Frameworks */,
+				0AD7C1DDAB2A9DF57BF8A36B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +182,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AD7C1DDAB2A9DF57BF8A36B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A8080A247DA662FFBF29011 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleOAuthTest/Pods-GoogleOAuthTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14ADBB9096DBA486F359120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleOAuthTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6395408D25AD388300CB39C8 /* Sources */ = {
@@ -225,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +390,7 @@
 		};
 		639540AB25AD388500CB39C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0478954CD9AE47BA5EC7436F /* Pods-GoogleOAuthTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +409,7 @@
 		};
 		639540AC25AD388500CB39C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B606061E59B6F35B12AF50EA /* Pods-GoogleOAuthTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
